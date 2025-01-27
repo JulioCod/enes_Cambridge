@@ -61,7 +61,7 @@ class enes_Cambridge {
             return null;
         }
 
-        let contents = doc.querySelectorAll('.def-block') || [];
+        let contents = doc.querySelectorAll('.trans') || [];
         if (contents.length == 0) return null;
 
         let definition = '';
