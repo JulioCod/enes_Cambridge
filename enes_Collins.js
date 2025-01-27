@@ -10,7 +10,7 @@ class enes_Cambridge {
         let locale = await api.locale();
         if (locale.indexOf('CN') != -1) return 'spanishdict';
         if (locale.indexOf('TW') != -1) return 'spanishdict';
-        return 'cambridge.org EN->ES Dictionary';
+        return 'Collins EN->ES Dictionary';
     }
 
     setOptions(options) {
