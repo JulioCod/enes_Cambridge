@@ -61,7 +61,7 @@ class enes_Cambridge {
             return null;
         }
 
-        let contents = doc.querySelectorAll('.dtrans-se') || [];
+        let contents = doc.querySelectorAll('.ddef-block') || [];
         if (contents.length == 0) return null;
 
         let definition = '';
