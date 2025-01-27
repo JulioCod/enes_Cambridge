@@ -8,8 +8,8 @@ class enes_Cambridge {
 
     async displayName() {
         let locale = await api.locale();
-        if (locale.indexOf('ES') != -1) return 'spanishdict';
-        if (locale.indexOf('EN') != -1) return 'spanishdict';
+        if (locale.indexOf('CN') != -1) return 'spanishdict';
+        if (locale.indexOf('TW') != -1) return 'spanishdict';
         return 'cambridge.org EN->ES Dictionary';
     }
 
