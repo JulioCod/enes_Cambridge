@@ -50,7 +50,7 @@ class enes_Cambridge {
     async findCambridge(word) {
         if (!word) return null;
 
-        let base = 'https://www.spanishdict.com/translate/';
+        let base = 'https://dictionary.cambridge.org/dictionary/english-spanish/';
         let url = base + encodeURIComponent(word);
         let doc = '';
         try {
@@ -61,7 +61,7 @@ class enes_Cambridge {
             return null;
         }
 
-        let contents = doc.querySelectorAll('#dictionary-neodict-es') || [];
+        let contents = doc.querySelectorAll('.def-block') || [];
         if (contents.length == 0) return null;
 
         let definition = '';
