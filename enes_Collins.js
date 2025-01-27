@@ -8,7 +8,7 @@ class enes_Collins {
 
     async displayName() {
         let locale = await api.locale();
-        if (locale.indexOf('CN') != -1) 'spanishdict';
+        if (locale.indexOf('CN') != -1) return 'spanishdict';
         if (locale.indexOf('TW') != -1) return 'spanishdict';
         return 'Collins EN >ES Dictionary';
     
