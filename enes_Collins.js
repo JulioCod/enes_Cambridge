@@ -1,5 +1,5 @@
 /* global api */
-class enes_Collins {
+class enes_Cambridge {
     constructor(options) {
         this.options = options;
         this.maxexample = 2;
@@ -10,8 +10,8 @@ class enes_Collins {
         let locale = await api.locale();
         if (locale.indexOf('CN') != -1) return 'spanishdict';
         if (locale.indexOf('TW') != -1) return 'spanishdict';
-        return 'Collins EN >ES Dictionary';
-    
+        return 'cambridge.org EN->ES Dictionary';
+    }
 
     setOptions(options) {
         this.options = options;
@@ -50,7 +50,7 @@ class enes_Collins {
     async findCambridge(word) {
         if (!word) return null;
 
-        let base = 'https://www.collinsdictionary.com/dictionary/english-spanish/';
+        let base = 'https://dictionary.cambridge.org/dictionary/english-spanish/';
         let url = base + encodeURIComponent(word);
         let doc = '';
         try {
@@ -61,7 +61,7 @@ class enes_Collins {
             return null;
         }
 
-        let contents = doc.querySelectorAll('.cB') || [];
+        let contents = doc.querySelectorAll('.def-block') || [];
         if (contents.length == 0) return null;
 
         let definition = '';
