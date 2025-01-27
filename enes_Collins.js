@@ -61,7 +61,7 @@ class enes_Cambridge {
             return null;
         }
 
-        let contents = doc.querySelectorAll('.dB') || [];
+        let contents = doc.querySelectorAll('.hom') || [];
         if (contents.length == 0) return null;
 
         let definition = '';
