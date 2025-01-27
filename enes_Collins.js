@@ -50,7 +50,7 @@ class enes_Cambridge {
     async findCambridge(word) {
         if (!word) return null;
 
-        let base = 'https://dictionary.cambridge.org/dictionary/english-spanish/';
+        let base = 'https://www.collinsdictionary.com/dictionary/english-spanish/';
         let url = base + encodeURIComponent(word);
         let doc = '';
         try {
