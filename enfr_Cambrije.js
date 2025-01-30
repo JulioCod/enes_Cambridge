@@ -10,7 +10,7 @@ class enfr_Cambrije {
         let locale = await api.locale();
         if (locale.indexOf('CN') != -1) return '剑桥英法词典';
         if (locale.indexOf('TW') != -1) return '剑桥英法词典';
-        return 'Cambrije EN->FR Dictionary';
+        return 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
     }
 
     setOptions(options) {
