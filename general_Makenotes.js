@@ -11,8 +11,8 @@ class general_Makenotes {
         let locale = await api.locale();
         if (locale.indexOf('CN') != -1) { this.makenotes_lable = '输入笔记(需在后台配置输出选项以保存)'; return '笔记摘录脚本'; }
         if (locale.indexOf('TW') != -1) { this.makenotes_lable = '輸入筆記(需在後臺配置輸出選項以保存)'; return '筆記摘錄腳本'; }
-        this.makenotes_lable = 'Agrega notas listín';
-        return 'Haz notitas';
+        this.makenotes_lable = 'agrega notas listín';
+        return 'Make Notes';
     }
 
 
