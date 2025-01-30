@@ -64,15 +64,15 @@ class enes_Cambridge {
         let contents = doc.querySelectorAll('.def-body') || [];
         if (contents.length == 0) return null;
 
-        let definition = '';
+        let definitions = [];
         for (const content of contents) {
             this.removeTags(content, '.bubble--3j0Ro');
             this.removeTags(content, '.copyright--2TbNS');
             this.removelinks(content);
-            definition += content.innerHTML;
+            definitions.push(content.innerHTML);
         }
         let css = this.renderCSS();
-        return definition ? css + definition : null;
+        return definitions ? css + definitions : null;
     }
 
     renderCSS() {
