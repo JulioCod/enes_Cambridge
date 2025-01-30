@@ -1,5 +1,5 @@
 /* global api */
-class enfr_Cambridge {
+class enfr_Cambrije {
     constructor(options) {
         this.options = options;
         this.maxexample = 2;
