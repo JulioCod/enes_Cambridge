@@ -27,7 +27,7 @@ class gen_Makenotes {
     }
 
     async findMiCodigo(word) {
-        if (!word) return null;
+        /*if (!word) return null;
 
         let base = 'https://dictionary.cambridge.org/dictionary/english-spanish/';
         let url = base + encodeURIComponent(word);
@@ -41,7 +41,7 @@ class gen_Makenotes {
         }
 
         let contents = doc.querySelectorAll('.def-body') || [];
-        if (contents.length == 0) return null;
+        if (contents.length == 0) return null;*/
 
         let definition = '';
         for (const content of contents) {
