@@ -1,5 +1,5 @@
 /* global api */
-class enes_Cambridge {
+class enes_Coll {
     constructor(options) {
         this.options = options;
         this.maxexample = 2;
@@ -10,7 +10,7 @@ class enes_Cambridge {
         let locale = await api.locale();
         if (locale.indexOf('CN') != -1) return 'spanishdict';
         if (locale.indexOf('TW') != -1) return 'spanishdict';
-        return 'Collins EN->ES Dictionary';
+        return 'colllllllllllllllllllllllllllllllllllllllllllllll';
     }
 
     setOptions(options) {
