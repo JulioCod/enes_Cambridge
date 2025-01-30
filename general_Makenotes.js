@@ -32,7 +32,7 @@ class general_Makenotes {
         if (!word) return [];
         let notes = [];
         let css = '<style>.odh-expression {font-size: 1em!important;font-weight: normal!important;}</style>';
-        notes.push({ css, definitions: [this.makenotes_lable] });
+        notes.push({ css, 'definicion': ['ahora no seas tontín'] });
         return notes;
     }
 }
